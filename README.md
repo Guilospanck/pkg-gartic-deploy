@@ -18,12 +18,12 @@ docker-compose -f docker-compose-development.yml up -d --build
 
 ### Staging
 ```bash
-// docker-compose -f docker-compose-staging.yml up -d  --build
+docker-compose -f docker-compose-staging.yml up -d  --build
 ```
 
 ### Production
 ```bash
-// docker-compose -f docker-compose-production.yml up -d --build
+docker-compose -f docker-compose-production.yml up -d --build
 ```
 
 ### Current Staging Server
@@ -31,23 +31,21 @@ docker-compose -f docker-compose-development.yml up -d --build
 - **Public IP:** <public-ip>
 - **Public DNS:** ec2-<public-dns>.compute-1.amazonaws.com
 ---
-- **Proteu**              - <public-ip>:3000
+- **Gartic**                    - <public-ip>:3000
 ---
-- **Gerdau**              - <public-ip>:3333
+- **Go API**                    - <public-ip>:8000
 ---
-- **API**                 - <public-ip>:4444
+- **Go Websocket**              - <public-ip>:5555
 ---
-- **IoT Websocket**       - <public-ip>:5555
----
-- **PostgreSQL**          - <public-ip>:7568
+- **PostgreSQL**                - <public-ip>:7568
   - User: pg_user
   - Password: 
 ---
-- **Portainer**           - <public-ip>:9000
+- **Portainer**                 - <public-ip>:9000
   - User: portainer_user
   - Password: 
 ---
-- **Jenkins**           - <public-ip>:8080
+- **Jenkins**                   - <public-ip>:8080
   - User: jenkins_user
   - Password: 
 ---
