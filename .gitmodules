@@ -1,0 +1,6 @@
+[submodule "gartic-like-app"]
+	path = gartic-like-app
+	url = https://github.com/Guilospanck/gartic-like-app.git
+[submodule "gartic-go-backend"]
+	path = gartic-go-backend
+	url = https://github.com/Guilospanck/gartic-go-backend.git
