@@ -1,0 +1,14 @@
+setup:
+  addons:
+    - plan: heroku-postgresql
+      as: postgres
+  config:
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: 123456
+    POSTGRES_DB: gartic
+build:
+  docker:
+    frontend: gartic-like-app/Dockerfile
+    backend: gartic-go-backend/Dockerfile
+  config:
+    GO_ENV: production
